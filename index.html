@@ -99,10 +99,14 @@ img, object{
       ctx.font = "30px Arial";
       ctx.fillText("Manha", 10, 50)
    }
-/*   
+  
    function loadImage() {
-      var img = document.getElementById("bobRossGif");
-      ctx.drawImage("https://giphy.com/explore/bob-ross", 100, 100);
+      var img = document.getElementById("https://giphy.com/explore/bob-ross");
+      ctx.drawImage(img, 100, 100);
+   }
+/* 
+   function clearCanvas() {
+
    }
 */
 </script>
@@ -110,7 +114,8 @@ img, object{
 <div id="content" class="w3-container">
 <a onclick="drawRectangle();" class="w3-btn w3-black"> Draw a Rectangle </a> <!--Draw Rectangle button-->
 <a onclick="drawName();" class="w3-btn w3-black"> Draw my Name </a> <!--Draw Name button-->
-<!--<a onclick="loadImage();" class="w3-btn w3-black"> Load an Image </a> 
+<a onclick="loadImage();" class="w3-btn w3-black"> Load an Image </a>
+<!--<a onclick="clearCanvas();" class="w3-btn w3-black"> Clear the Canvas </a> 
 -->
 </div>
 
