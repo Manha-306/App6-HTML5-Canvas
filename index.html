@@ -96,12 +96,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
       ctx.fillText("Manha", 10, 50)
    }
    
-
+   function loadImage() {
+      var img = document.getElementById("bobRossGif");
+      ctx.drawImage("https://giphy.com/explore/bob-ross", 100, 100);
+   }
 
 </script>
 <a href=drawRectangle() class="w3-btn w3-grey w3-round"> Draw a Rectangle </a> <!--Draw Rectangle button-->
 <a href=drawName() class="w3-btn w3-grey w3-round"> Draw my Name </a> <!--Draw Name button-->
-
+<a href=loadImage() class="w3-btn w3-grey w3-round"> Load an Image </a> <!--Load Image button-->
 
    <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
