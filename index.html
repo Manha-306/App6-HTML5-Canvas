@@ -81,7 +81,7 @@ img, object{
 <canvas id="myCanvas" width="250" height="500" style="border:1px solid #000000;">
 </canvas>
 
-<img id="bobRoss" src="https://media.giphy.com/media/hcwIm2NdTYhva/giphy.gif" alt="Bob Ross Welcome gif" width="150" height="75" style="display: none;"> <!--image to be used in function later (not displayed) -->
+<img id="bobRoss" src="https://media.giphy.com/media/hcwIm2NdTYhva/giphy.gif" alt="Bob Ross Welcome gif" style="display: none;"> <!--image to be used in function later (not displayed) -->
 <script>
    var canvas = document.getElementById("myCanvas");
    var ctx = canvas.getContext("2d");
@@ -109,7 +109,7 @@ img, object{
  
    function clearCanvas() {
       ctx.setTransform(1, 0, 0, 1, 0, 0); //reset transforms so clearRect covers the real pixel area
-      ctx.clearRect(0, 0, canvas.width, canvas.height); //clears all pixels
+      ctx.clearRect(0, 0, 150, 75); //clears all pixels
       ctx.beginPath(); //resets path
    }
 
