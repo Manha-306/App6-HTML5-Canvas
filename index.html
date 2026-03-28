@@ -104,12 +104,12 @@ img, object{
   
    function loadImage() {
       var img = document.getElementById("bobRoss"); //previously created img used
-      ctx.drawImage(img,0,0); //image drawn with x, y position
+      ctx.drawImage(img,0,0,150,175); //image drawn with x, y, width, height
    }
  
    function clearCanvas() {
       ctx.setTransform(1, 0, 0, 1, 0, 0); //reset transforms so clearRect covers the real pixel area
-      ctx.clearRect(0, 0, 150, 75); //clears all pixels
+      ctx.clearRect(0, 0, canvas.width, canvas.height); //clears all pixels across the canvas
       ctx.beginPath(); //resets path
    }
 
