@@ -81,30 +81,30 @@ img, object{
 <canvas id="myCanvas" width="250" height="500" style="border:1px solid #000000;">
 </canvas>
 
-<img id="bobRoss" src="https://media.giphy.com/media/hcwIm2NdTYhva/giphy.gif" alt="Bob Ross Welcome gif" width="150" height="75" style="display: none;"> <!--image to be used in function later -->
+<img id="bobRoss" src="https://media.giphy.com/media/hcwIm2NdTYhva/giphy.gif" alt="Bob Ross Welcome gif" width="150" height="75" style="display: none;"> <!--image to be used in function later (not displayed) -->
 <script>
    var canvas = document.getElementById("myCanvas");
    var ctx = canvas.getContext("2d");
 
    function drawRectangle() {
-      ctx.beginPath();
-      ctx.moveTo(10, 10);
-      ctx.lineTo(10, 100);
+      ctx.beginPath(); //start path of drawn pixels
+      ctx.moveTo(10, 10); //begin path at given x, y 
+      ctx.lineTo(10, 100); 
       ctx.lineTo(60, 100);
       ctx.lineTo(60, 10);
-      ctx.lineTo(10, 10);
-      ctx.closePath();
-      ctx.stroke();
-   }
+      ctx.lineTo(10, 10); //line drawn moving to x, y (for all 4 lines)
+      ctx.closePath(); //end path of pixels
+      ctx.stroke(); //actual stroke of the lines
+   } 
 
    function drawName() {
-      ctx.font = "30px Arial";
-      ctx.fillText("Manha", 10, 50)
+      ctx.font = "30px Arial"; //text font
+      ctx.fillText("Manha", 10, 50) //text filled in
    }
   
    function loadImage() {
-      var img = document.getElementById("bobRoss");
-      ctx.drawImage(img,0,0);
+      var img = document.getElementById("bobRoss"); //previously created img used
+      ctx.drawImage(img,0,0); //image drawn with x, y position
    }
  
    function clearCanvas() {
